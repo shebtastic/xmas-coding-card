@@ -81,7 +81,9 @@ class Snowflake {
 }
 
 const createSnowfall = (count, speed, wind, angularMomentum) => {
-  let myp5 = new p5(s(count, speed, wind, angularMomentum));
+  const element = document.querySelector(".card .front .snowfall")
+  let myp5 = new p5(s(count, speed, wind, angularMomentum), element);
 };
 
 createSnowfall(1, 1, 0, 0.7);
+

@@ -9,13 +9,57 @@
     />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
-    <script src="sketch.js"></script>
-    <style>
-      canvas {
-        width: 300px !important;
-        height: 600px !important;
-      }
-    </style>
+    <script src="sketch.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body></body>
+  <body>
+    <main class="card">
+      <section class="front">
+        <h1>Happy Holidays!</h1>
+        <div class="tree center">
+          <svg class="icon rectangle trunk" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect stroke="currentColor" fill="currentColor" width="100" height="100"/>
+          </svg>
+          <svg class="icon triangle tree-top" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <polygon stroke="currentColor" fill="currentColor" points="0,100 50,0 100,100"/>
+          </svg>
+          <svg class="icon triangle tree-mid" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <polygon fill="currentColor" points="0,100 50,0 100,100"/>
+          </svg>
+          <svg class="icon triangle tree-bottom" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <polygon fill="currentColor" points="0,100 50,0 100,100"/>
+          </svg>
+          <svg class="icon fish" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M96.1177 56.0922L97.1238 53.4776C100.346 43.3217 94.2792 37.2313 85.485 27.6024C78.3455 19.7898 69.6177 11.5492 65.3738 7.58287C54.8943 -2.2286 38.3121 -6.59679 59.2353 20.3848C85.6689 54.464 60.1545 77.3226 60.1545 77.3226C37.0966 105.781 55.5021 105.056 83.3758 73.9564C89.9383 66.6448 93.9881 60.9092 96.1177 56.0922Z"
+                  fill="#FF4A11"/>
+            <path d="M37.5767 30.3371C53.0712 52.6843 38.1384 67.6625 38.1384 67.6625C24.6561 86.3095 35.4368 85.8398 51.7382 65.4653C64.955 48.9528 60.8184 44.7151 52.9537 35.0811C48.7711 29.9562 43.6539 24.5546 41.1668 21.9504C35.0232 15.5155 25.32 12.6452 37.5767 30.3371Z"
+                  fill="#FF4A11"/>
+            <path d="M7.19027 39.8563C26.1371 50.983 7.70097 58.5294 7.70097 58.5294C-8.97325 67.9078 4.28441 67.6259 24.4365 57.3761C40.7685 49.0676 35.6973 46.9644 26.0707 42.1683C20.9535 39.6215 14.6924 36.939 11.6486 35.6447C4.12609 32.4455 -7.79865 31.0521 7.19027 39.8563Z"
+                  fill="#FF4A11"/>
+          </svg>
+        </div>
+        <div class="tree left">
+          <svg class="icon rectangle trunk" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect fill="currentColor" width="100" height="100"/>
+          </svg>
+          <svg class="icon triangle tree-top" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <polygon fill="currentColor" points="0,100 50,0 100,100"/>
+          </svg>
+          <svg class="icon triangle tree-mid" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <polygon fill="currentColor" points="0,100 50,0 100,100"/>
+          </svg>
+          <svg class="icon triangle tree-bottom" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <polygon fill="currentColor" points="0,100 50,0 100,100"/>
+          </svg>
+        </div>
+        <div class="snowfall"></div>
+      </section>
+      <section class="back">
+        <h2>Cheers to whoever</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci delectus est excepturi omnis praesentium qui quo ut? Accusamus architecto atque aut excepturi natus perferendis reprehenderit rerum! Deserunt error fugit illo!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa eius esse libero molestiae, officiis quasi sit temporibus. Assumenda cum fugiat impedit inventore modi mollitia nihil omnis placeat quaerat soluta.</p>
+      </section>
+    </main>
+  </body>
 </html>
