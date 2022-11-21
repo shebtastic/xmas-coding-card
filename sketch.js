@@ -3,7 +3,7 @@ const randomInt = (min, max) => Math.floor(random(min, max));
 
 const width = 100;
 const height = 150;
-const frameRate = 60
+const frameRate = 30
 
 const s = (count, speed, wind, angularMomentum) => (sketch) => {
   let snowflakes = [];

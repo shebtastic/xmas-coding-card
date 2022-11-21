@@ -55,7 +55,7 @@ body {
 }
 
 .front {
-    background-color: brown;
+    background-color: #A9DFBF ;
 }
 
 .back {
@@ -135,7 +135,7 @@ h1 {
 }
 
 .tree .trunk {
-    color: saddlebrown !important;
+    color: saddlebrown;
     top: 65px;
     width: 40px;
     left: 30px;
