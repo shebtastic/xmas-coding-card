@@ -3,25 +3,23 @@ const randomInt = (min, max) => Math.floor(random(min, max));
 
 const width = 100;
 const height = 150;
-const frameRate = 60
+const frameRate = 30;
 
-const s = (count, speed, wind, angularMomentum) => (sketch) => {
+const sketch = (count, speed, wind, angularMomentum) => (sketch) => {
   let snowflakes = [];
 
   sketch.setup = () => {
     sketch.createCanvas(width, height);
     sketch.fill(240);
     sketch.noStroke();
-    sketch.frameRate(frameRate)
+    sketch.frameRate(frameRate);
   };
 
   sketch.draw = () => {
-    // sketch.background("brown");
     sketch.clear();
 
-    const time = sketch.frameCount / frameRate
+    const time = sketch.frameCount / frameRate;
 
-    // create a random number of snowflakes each frame
     for (let i = 0; i < randomInt(0, count); i++) {
       snowflakes.push(
         new Snowflake(
@@ -31,15 +29,12 @@ const s = (count, speed, wind, angularMomentum) => (sketch) => {
           },
           { speed, angularMomentum, wind }
         )
-      ); // append snowflake object
+      );
     }
 
-    // loop through snowflakes with a for..of loop
     for (let flake of snowflakes) {
-      flake.update(time); // update snowflake position
-      flake.display(); // draw snowflake
+      flake.update(time);
     }
-    // console.log(snowflakes[0]?.posX, snowflakes[0]?.posY);
   };
 };
 
@@ -72,7 +67,9 @@ class Snowflake {
     // delete snowflake if past end of screen
     if (this.posY > height) {
       this.cleanUp(this);
+      return;
     }
+    this.display();
   }
 
   display() {
@@ -80,10 +77,12 @@ class Snowflake {
   }
 }
 
-const createSnowfall = (count, speed, wind, angularMomentum) => {
-  const element = document.querySelector(".card .front .snowfall")
-  let myp5 = new p5(s(count, speed, wind, angularMomentum), element);
+const createSnowfall = ({
+  count = 1,
+  speed = 1,
+  wind = 0,
+  angularMomentum = 0.7
+}) => {
+  const element = document.querySelector(".card .front .snowfall");
+  new p5(sketch(count, speed, wind, angularMomentum), element);
 };
-
-createSnowfall(1, 1, 0, 0.7);
-

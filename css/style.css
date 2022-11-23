@@ -1,0 +1,54 @@
+.treeimage {
+  position: absolute;
+  width: 85%;
+  left: 30px;
+  bottom: 5px;
+  z-index: 1;
+}
+
+.tree.left {
+  left: 0px;
+}
+
+.tree.center {
+  transform: scale(3);
+  height: 203px;
+}
+
+.tree.center .fish {
+  height: 20px;
+  width: 20px;
+  top: 55px;
+  left: 37px;
+}
+
+.tree .tree-top {
+  color: lightgreen;
+  top: 0px;
+  left: 30px;
+  height: 40px;
+  width: 40px;
+}
+
+.tree .tree-mid {
+  color: green;
+  top: 20px;
+  left: 20px;
+  height: 60px;
+  width: 60px;
+}
+
+.tree .tree-bottom {
+  color: darkgreen;
+  top: 40px;
+  left: 10px;
+  height: 80px;
+  width: 80px;
+}
+
+.tree .trunk {
+  color: saddlebrown;
+  top: 65px;
+  width: 40px;
+  left: 30px;
+}
