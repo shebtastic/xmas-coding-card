@@ -23,7 +23,6 @@ body {
   /*height: 100vh;*/
   /*width: 100vw;*/
   margin: 0;
-  font-family: Caveat;
 }
 
 body {
@@ -74,30 +73,12 @@ body {
   z-index: 3;
 }
 
-.icon {
-  height: 100px;
-  width: 100px;
-}
-
 h1 {
-  font-family: "Mountains of Christmas";
   font-size: 3em;
-  color: lavenderblush;
   position: absolute;
   width: 100%;
   text-align: center;
   z-index: 2;
-}
-
-.tree {
-  position: absolute;
-  height: 135px;
-  bottom: 0px;
-  z-index: 1;
-}
-
-.tree > * {
-  position: absolute;
 }
 
 .postcardimage {
@@ -107,6 +88,3 @@ h1 {
   object-fit: cover;
 }
 
-.contrasted {
-  text-shadow: 5px 4px black;
-}

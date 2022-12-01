@@ -1,3 +1,5 @@
+import "https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js";
+
 const random = (min, max) => min + Math.random() * (max - min + 1);
 const randomInt = (min, max) => Math.floor(random(min, max));
 
@@ -81,8 +83,17 @@ const createSnowfall = ({
   count = 1,
   speed = 1,
   wind = 0,
-  angularMomentum = 0.7
+  angularMomentum = 0.7,
 }) => {
   const element = document.querySelector(".card .front .snowfall");
   new p5(sketch(count, speed, wind, angularMomentum), element);
 };
+
+const createCardFlip = () => {
+  document.addEventListener("click", () => {
+    const element = document.querySelector(".card");
+    element.classList.toggle("flipped");
+  });
+};
+
+export { createSnowfall, createCardFlip };
