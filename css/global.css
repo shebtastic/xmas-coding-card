@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Mountains of Christmas";
-  src: url("/fonts/Mountains_of_Christmas/MountainsofChristmas-Regular.ttf");
+  src: url("https://raw.githack.com/shebtastic/xmas-coding-card/main/fonts/Mountains_of_Christmas/MountainsofChristmas-Regular.ttf");
 }
 
 @font-face {
   font-family: "Caveat";
-  src: url("/fonts/Caveat/Caveat-VariableFont_wght.ttf");
+  src: url("https://github.com/shebtastic/xmas-coding-card/blob/main/fonts/Caveat/Caveat-VariableFont_wght.ttf");
 }
 
 :root {
@@ -87,4 +87,3 @@ h1 {
   width: 100%;
   object-fit: cover;
 }
-
